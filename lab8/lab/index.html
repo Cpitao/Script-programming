@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="sheet.css"
+        type="text/css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>AGH Dealer</title>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">AGH Dealer</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pojazdy
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Samochody osobowe</a></li>
+                    <li><a href="#">Samochody ciężarowe</a></li>
+                    <li><a href="#">Przyczepy</a></li>
+                  </ul>
+                </li>
+                <form class="navbar-form navbar-right" action="#">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Szukaj">
+                    </div>
+                    <button type="submit" class="btn btn-default">Szukaj</button>
+                </form>
+              </ul>
+              
+            </div>
+        </nav>
+        <!-- End of navigation bar -->
+
+        <div class="panel" id="my-content">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="col-sm-12 car-container">
+                        <img src="car1.png" />
+                        <div class="car-content">
+                            <h1>Fiat Lite</h1>
+                            <ul>
+                                <li>Silnik benzynowy 999cm<sup>3</sup></li>
+                                <li>Skrzynia biegów manualna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12 car-container">
+                        <img src="car1.png" />
+                        <div class="car-content">
+                            <h1>Fiat Lite</h1>
+                            <ul>
+                                <li>Silnik benzynowy 999cm<sup>3</sup></li>
+                                <li>Zasięg 400km</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12 car-container">
+                        <img src="przyczepa1.png" />
+                        <div class="car-content">
+                            <h1>PRZYCZEPA SAMOCHODOWA BEZ PLANDEKI</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12 car-container">
+                        <img src="przyczepa1.png" />
+                        <div class="car-content">
+                            <h1>PRZYCZEPA DWUOSIOWA</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+                &#169; CyberDealer
+            </footer>
+        </div>
+            
+
+    </body>
+</html>

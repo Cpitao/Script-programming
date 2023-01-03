@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="counter" type="text" value="0">
+    </body>
+
+    <script>
+        function addSpans(i) {
+            while (i > 0) {
+                var s = document.createElement("span");
+                s.innerHTML = "0 ";
+                window.document.body.appendChild(s);
+                i--;
+            } 
+        }
+
+        addSpans(10);
+
+        function modifySpans(val) {
+            let spans = Array.from(document.getElementsByTagName("span"));
+            spans.forEach(element => {
+                element.innerHTML = val + " ";
+            })
+        }
+
+        function decrement() {
+            let v = document.querySelector("input").value;
+            console.log(v);
+            v = parseInt(v);
+            console.log(v);
+            if (!isNaN(v) && v > 0) {
+                v--;
+                document.getElementById("counter").value = v;
+                modifySpans(v);
+            }
+        }
+
+        setInterval(decrement, 1000);
+    </script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html >
+<head >
+    <script src ="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src ="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin ></script>
+    <script src ="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+</head>
+<body>
+    <div id="root">
+        <input type="text" id="ctr" value="3600">
+    </div>
+
+    <script type="text/babel">
+        import {useState, useEffect} from "react";
+        import ReactDOM from "react-dom/client";
+
+        class Hello extends React.Component {
+            render () {
+                return <h1>Hello World ! </h1>;
+            }
+        }
+
+        class Counter extends React.Component {
+            render () {
+                const [value, setValue] = useState(parseInt(document.getElementById("ctr").value));
+
+                useEffect(() => {
+                    setTimeout(() => {
+                        setValue((value) => (!isNaN(value) && value > 0) ? value - 1 : value);
+                    }, 1000);
+                });
+                return <span>{value}<br/></span>;
+            }
+        }
+
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<Counter />);
+
+
+        // root.render(<Hello />);
+    </script>
+</body>
+</html>

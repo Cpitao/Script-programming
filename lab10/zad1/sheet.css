@@ -1,0 +1,57 @@
+body {
+    font-size: 1.5vw;
+}
+
+aside  {
+    float: right;
+    width: 50%;
+}
+
+footer {
+/* Specyfikacja wyglądu */
+}
+
+header {
+/* Specyfikacja wyglądu */
+}
+
+main {
+    clear: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    display: inline;
+}
+
+nav ul {
+/* Specyfikacja wyglądu */
+}
+
+nav li {
+/* Specyfikacja wyglądu */
+}
+
+.azure {
+    background-color: lightblue;
+}
+
+.framed {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+@keyframes dynamicColor {
+    0% {color: red;}
+    50% {color: blue;}
+    100% {color: red;}
+}
+
+.colorChanger {
+    animation-name: dynamicColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

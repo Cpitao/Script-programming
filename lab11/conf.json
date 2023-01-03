@@ -1,0 +1,8 @@
+{
+    "source": {
+        "include": [ "module.mjs" ],
+        "exclude": [ /* array of paths to exclude */ ],
+        "includePattern": ".+\\.m?js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    }
+}
